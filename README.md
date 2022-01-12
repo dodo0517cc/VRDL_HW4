@@ -25,6 +25,8 @@ Upscale the testing images to 3.
 ## 2. Unsupervised method－ZSSR. 
 
 weights（1.pkl - 13.pkl）：https://drive.google.com/drive/folders/1-6Cj-yDXON2mbNgLITit8UtHJU2hZhmd?usp=sharing
+    
+### Usage
 
 Change the ZSSR.py from the clone file to ZSSR.py on my GitHub.
 
@@ -41,7 +43,6 @@ The final testing PSNR of ZSSR model is roughly 27.8, and the testing PSNR of Sw
 ### SwinIR
 
 <img width="124" alt="image" src="https://user-images.githubusercontent.com/77607182/149051398-7dcff342-1db7-4c6c-b127-48bba26a42bc.png">
-
 
 ### ZSSR
 
