@@ -42,8 +42,7 @@ The final testing PSNR of ZSSR model is roughly 27.8, and the testing PSNR of Sw
 
 ### SwinIR
 
-<img width="124" alt="image" src="https://user-images.githubusercontent.com/77607182/149051398-7dcff342-1db7-4c6c-b127-48bba26a42bc.png">
-
+<img width="372" alt="image" src="https://user-images.githubusercontent.com/77607182/149051398-7dcff342-1db7-4c6c-b127-48bba26a42bc.png">
 ### ZSSR
 
-<img width="124" alt="image" src="https://user-images.githubusercontent.com/77607182/149051408-32e6bc5d-d6af-4b18-88ba-be1ba35db51e.png">
+<img width="372" alt="image" src="https://user-images.githubusercontent.com/77607182/149051408-32e6bc5d-d6af-4b18-88ba-be1ba35db51e.png">
