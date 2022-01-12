@@ -4,21 +4,32 @@
 
 I've tried two models. 
 
-## 1. Supervised model－SwinIR
+## 1. Supervised method－SwinIR
 
 weights：https://drive.google.com/drive/folders/1YmEy9Cx0abPUg5aDkjdOatqSRO0KMxeF?usp=sharing
 
+### Usage
+
 Change the main_test_swinir.py from the clone file to main_test_swinir.py on my GitHub.
 
+Put the testing images in the <SwinIR path>/testsets/test file.
 
-## 2. Unsupervised model－ZSSR. 
+Rub the classical super resolution.
+
+Upscale the testing images to 3.
+
+    !python main_test_swinir.py --task classical_sr --scale 3 --training_patch_size 48 --model_path superresolution/swinir_sr_classical_patch48_x3/models/25000_G.pth --folder_lq '/home/wschenst06g/Ming/MMSE_global/dodo/KAIR/testsets/test' --folder_gt testsets/test
+
+
+  
+## 2. Unsupervised method－ZSSR. 
 
 weights（1.pkl - 13.pkl）：https://drive.google.com/drive/folders/1-6Cj-yDXON2mbNgLITit8UtHJU2hZhmd?usp=sharing
 
 Change the ZSSR.py from the clone file to ZSSR.py on my GitHub.
 
-
-
+    !pip install GPUtil
+    !python run_ZSSR.py
 
 
 
