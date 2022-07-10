@@ -1,8 +1,17 @@
-# VRDL_HW4
+# VRDL_HW4 (SuperResolution)
 
-## SuperResolution
+## Reference：
 
-I've tried two models. 
+1.	Unsupervised method－ZSSR：https://github.com/assafshocher/ZSSR
+Most super resolution algorithms need to be trained on a specific dataset to obtain the target model. The ZeroShotSR algorithm requires neither prior image samples nor prior training, it uses the internal repetition information of a single image to train a small image-specific CNN during testing.
+
+2.	Supervised method－SwinIR：https://github.com/JingyunLiang/SwinIR, https://github.com/cszn/KAIR
+SwinIR is method that use transformer to restore image. The experimental results show that the performance of SwinIR is 0.14-0.45dB higher than the current sota method, and the parameter quantity is also reduced by 67%.
+
+## Brief introduction： 
+Super Resolution refers to reconstructing a corresponding high-resolution image from an observed low-resolution image by means of software or hardware. Two commonly used indicators for quantitative evaluation of SR quality are PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structure Similarity Index). The higher the two values, the closer the pixel value of the reconstruction result is to the standard. The indicator for evaluation of this homework is PSNR, details are as follows. 
+
+The research process of image super-resolution reconstruction based on deep learning is as follows. First, find a set of original images Image1. Second, reduce the resolution of this group of pictures to a group of images Image2, and then reconstruct Image2 super-resolution to Image3 through various neural network structures (Image3 has the same resolution as Image1). Compare Image1 and Image3 through PSNR or other methods, and verify the effect of super-resolution reconstruction. Adjust the node model and parameters in the neural network according to the effect. Eventually, execute the process repeatedly until the result of the fourth step comparison is satisfactory.
 
 ## 1. Supervised method－SwinIR
 
